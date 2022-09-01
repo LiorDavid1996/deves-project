@@ -12,7 +12,7 @@ function closeModal(el) {
 async function printScreen(params) {
 
   let devices = await fetch(url).then((data) => data.json());
-  devices.forEach((device,index) => {
+  devices.forEach((deviceindex) => {
     container.innerHTML += cardTemplate(device),brands[index] ;
   });
 
@@ -22,14 +22,14 @@ let phons=[ "1phone.png","2phone.png","3phone.png","4phone.png","5phone.png","6p
 
 
 ]
-printScreen();
+printScreenss();
 let content=0
 let cont=0
 function cardTemplate(device) {
 
   return `
     <div class=" col-md-4 col-sm-1  justify-content-center p-3"   >
-        <img src="../Photos/phones/${phons[cont++]}" class="phone_img" alt="" onclick="openModal(this)";>
+        img src="../Photos/phones/${phons[cont++]}" class="phone_img" alt="" onclick="openModal(this)";>
       <div id="modal-l">
         <div class="modal-content-l">
                 <span class="close-l" onclick="closeModal(this)">&times;</span>
@@ -52,7 +52,7 @@ function cardTemplate(device) {
                  <button type="button" class="btn btn-primary">buy now</button>
                  </div>
       </div>
-      <h1 id="h1text">${brands[content++]}</h1>
+      <h1 id="h1text">${brands [content++]}</h1>
       <div id="box_Contener"></div>
     </div>  
     `;

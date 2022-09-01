@@ -11,10 +11,11 @@ async function printTable(params) {
 }
 printTable()
 
-function tableTemplate(user) {
+function tableTemplatesa(user) {
     return `
     <tr>
     <td>${user.name.first} </td>
+    <
     <td>${user.name.last} </td>
     <td>${user.age} </td>
     <td>${user.email} </td>

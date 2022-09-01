@@ -8,7 +8,7 @@ form.addEventListener('submit',(e)=>{
     Array.from(form.elements)
     // take each index and assign to the data object
     .forEach(element =>
-        {if(element.name!='submit')
+        {if(elementname!='submit')
         data[element.name]=element.value}
     );
 
