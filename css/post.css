@@ -1,0 +1,18 @@
+
+
+#div_form{
+   
+display: flex;
+justify-content: center;
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+input{
+   
+    width: 40vw;
+}
